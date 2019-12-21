@@ -1,0 +1,12 @@
+external-queue:
+  datasources:
+    -
+      enabled: true
+      wlsJmsUrl: t3://localhost:7001
+      wlsJndi: weblogic.jndi.WLInitialContextFactory
+      factoryJndi: jms/factory/queue/waua-factory-jms-1
+      queueJndi: jms/queue/waua-jms-1
+      wlsUser: system
+      wlsPassword: weblogic12
+      dtoName: com.waua.jmstest.MyDto
+      implName: com.waua.jmstest.MyServiceImpl
